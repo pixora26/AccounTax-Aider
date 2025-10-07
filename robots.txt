@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://www.accountaxaider.com/sitemap.xml

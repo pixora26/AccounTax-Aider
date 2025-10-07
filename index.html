@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- Primary Meta -->
+    <title>AccounTax Aider | Accounting & Tax Consultant in Malappuram</title>
+    <meta name="description" content="AccounTax Aider is a modern accounting and tax consulting firm in Malappuram, Kerala. We specialize in tax filing, bookkeeping, financial consulting, audits, payroll, and CFO services for small and medium businesses.">
+    <meta name="keywords" content="AccounTax Aider, accounting firm Malappuram, tax consultant Malappuram, bookkeeping Kerala, SME accounting, financial consulting, audit services, payroll management, virtual CFO, startup accounting">
+    <meta name="author" content="AccounTax Aider Firm">
+  
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="AccounTax Aider - Modern Accounting & Tax Consulting in Malappuram">
+    <meta property="og:description" content="Trusted partner for accounting, tax preparation, and financial consulting. Serving small and medium businesses with integrity and innovation.">
+    <meta property="og:image" content="/images/acc-pic.png">
+    <meta property="og:url" content="https://accountaxaider.com">
+    <meta property="og:type" content="website">
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AccounTax Aider | Accounting & Tax Consulting Firm in Malappuram">
+    <meta name="twitter:description" content="Modern, technology-driven accounting and tax consulting firm serving SMEs in Malappuram, Kerala.">
+    <meta name="twitter:image" content="/images/acc-pic.png">
+  
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://accountaxaider.com">
+  
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+  
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary-blue': '#1D4ED8',
+              'accent-blue': '#3B82F6',
+            },
+          }
+        }
+      }
+    </script>
+  
+    <!-- Local Business Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "AccountingService",
+            "name": "AccounTax Aider",
+            "image": "https://www.accountaxaider.com/images/logo-only.png",
+            "url": "https://www.accountaxaider.com",
+            "telephone": "+91-9645201329",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "CP Building, Opp Kodur SCB, Kodur Po, Vadakkemanna",
+              "addressLocality": "Malappuram",
+              "addressRegion": "Kerala",
+              "postalCode": "676504",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 11.036483,
+              "longitude": 76.065914
+            },
+            "sameAs": [
+              "https://www.instagram.com/accountax_aider/",
+              "https://wa.me/9645201329",
+              "mailto:ata.kdy2022@gmail.com"
+            ]
+          }
+    </script>
+  
+    <!-- Favicon -->
+    <link rel="icon" href="/images/logo-only.png" type="image/png">
+  </head>
+  
+<body>
+    
+    
+
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#home" class="flex items-center space-x-2 text-2xl font-bold text-primary-blue">
+                     <img src="/images/logo-only.png" width="60" alt="AccounTax Aider Logo"> 
+                     <h1 class="sr-only">AccounTax Aider - Accounting & Tax Consulting in Malappuram</h1>
+                    </a>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-primary-blue border-b-2 border-primary-blue hover:text-accent-blue transition duration-300 font-semibold">Home</a>
+                    <a href="service.html" class="text-gray-600 hover:text-accent-blue transition duration-300 font-medium">Services</a>
+                    <a href="about.html" class="text-gray-600 hover:text-accent-blue transition duration-300 font-medium">About Us</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-accent-blue transition duration-300 font-medium">Contact</a>
+                  </nav>
+
+                <a href="#contact" class="hidden md:block bg-primary-blue hover:bg-accent-blue text-white py-2 px-4 rounded-lg shadow-lg transition duration-300 font-semibold">
+                    Get a Quote
+                </a>
+
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-primary-blue hover:bg-gray-100 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-inner pb-4">
+            <a href="index.html" class="block py-2 px-4 text-blue-600 hover:bg-gray-100 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+            <a href="service.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
+            <a href="about.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About Us</a>
+            <a href="contact.html" class="block mx-4 mt-2 text-center bg-primary-blue hover:bg-accent-blue text-white py-2 rounded-lg font-semibold transition duration-300">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <!-- Background video -->
+            <video class="hero-video" autoplay muted  loop playsinline>
+                <source src="/images/hero.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        
+            <!-- Overlay -->
+            <div class="overlay"></div>
+        
+            <!-- Hero content -->
+
+        </section>
+        
+
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="section-title text-4xl font-bold text-gray-800 mb-4">Our Core Services</h2>
+                <p class="text-xl text-gray-600 mb-16 max-w-3xl mx-auto">Providing comprehensive financial solutions tailored to your unique business needs.</p>
+
+                <div class="relative max-w-7xl mx-auto overflow-hidden">
+                    <div id="services-slider-track" class="flex transition-transform duration-500 ease-in-out w-[800%] sm:w-[400%] lg:w-[200%] -ml-4">
+                        </div>
+
+                    <button id="prev-service-btn" class="absolute top-1/2 -left-1 transform -translate-y-1/2 p-3 bg-white/70 rounded-full shadow-lg text-primary-blue opacity-70 hover:opacity-100 disabled:opacity-30 disabled:cursor-not-allowed transition duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button id="next-service-btn" class="absolute top-1/2 -right-1 transform -translate-y-1/2 p-3 bg-white/70 rounded-full shadow-lg text-primary-blue opacity-70 hover:opacity-100 disabled:opacity-30 disabled:cursor-not-allowed transition duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+
+                <div id="service-slider-dots" class="flex justify-center mt-6 space-x-2">
+                    </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-white animate-init">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
+
+                <div class="lg:w-1/2 relative animate-init">
+                    <img src="/images/acc-pic.png" alt="Professionals working collaboratively in a modern office" class="rounded-2xl shadow-2xl w-full h-auto">
+                    <div class="absolute -bottom-6 left-0 bg-black text-white opacity-70 px-4 p-6 rounded-xl shadow-2xl max-w-sm hidden sm:block">
+                        <p class="text-lg font-bold">Innovation, Integrity, Impact.</p>
+                        <p class="text-sm opacity-90 mt-1">Our core values drive every financial decision.</p>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 animate-init" style="transition-delay: 0.1s;">
+                    <h2 class="section-title text-4xl font-bold text-gray-800 mb-4 text-left">AccounTax Story</h2>
+                    <p class="text-gray-600 text-lg mb-6">
+                        AccounTax Aider, based in Malappuram and founded by Mohammed Yaseen Chulliyan four years ago, has established itself as a trusted partner for businesses seeking clarity and confidence in their financial operations. With a commitment to precision, transparency, and strategic insight, we guide our clients through the complexities of modern finance, ensuring every decision is informed and every transaction accounted for.                      </p>
+                    <p class="text-gray-600 mb-8">
+                        Our comprehensive suite of services spans bookkeeping, tax advisory, audits, payroll, and compliance management, all delivered with meticulous attention to detail and adherence to best practices. At AccounTax Aider, we combine professional expertise with innovative accounting solutions, tailoring our approach to the unique needs of each client. By fostering long-term relationships and prioritizing sustainable growth, we empower businesses to thrive, navigate challenges with assurance, and achieve financial success with confidence.                                </p>
+
+                    <div class="flex flex-wrap gap-6">
+                        <div class="w-auto">
+                            <span class="text-4xl font-extrabold text-accent-blue" data-count="98" data-animate>0</span>%
+                            <p class="text-sm text-gray-500 mt-1">Client Retention Rate</p>
+                        </div>
+                        <div class="w-auto">
+                            <span class="text-4xl font-extrabold text-accent-blue" data-count="100" data-animate>0</span>+
+                            <p class="text-sm text-gray-500 mt-1">Clients Served</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="contact" class="py-20 bg-white animate-init">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="section-title text-4xl font-bold text-gray-800 mb-4 text-center">Let's Connect</h2>
+                <p class="text-xl text-gray-600 mb-10 text-center">Start your journey toward simplified finance today.</p>
+
+                <div class="flex flex-col lg:flex-row gap-8 max-w-7xl mx-auto">
+
+                    <div class="lg:w-1/2 w-full bg-white rounded-2xl shadow-2xl overflow-hidden border-t-8 border-accent-blue card-hover-effect">
+                        <h3 class="p-4 bg-gray-100 text-gray-800 text-center font-semibold text-xl">Find Our Office</h3>
+
+                        <div class="relative w-full" style="padding-top: 75%;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.028572841084!2d76.06591467595766!3d11.036483089128508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64b0068b46275%3A0xb831b5d95ea49092!2sAccounTax%20Aider!5e0!3m2!1sen!2sin!4v1759226715795!5m2!1sen!2sin"
+                                width="100%"
+                                height="100%"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                class="absolute inset-0"
+                            ></iframe>
+                        </div>
+                        <p class="text-center text-md font-medium text-gray-700 p-4">CP Building, Opp Kodur SCB, Kodur Po, Vadakkemanna, Kerala 676504</p>
+                    </div>
+
+                    <div class="lg:w-1/2 w-full p-8 md:p-12 bg-gray-50 rounded-2xl shadow-2xl border-t-8 border-primary-blue card-hover-effect">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-3">Send Us a Message</h3>
+
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-primary-blue focus:ring-primary-blue transition duration-200"
+                                    placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Business Email</label>
+                                <input type="email" id="email" name="email" required
+                                    class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-primary-blue focus:ring-primary-blue transition duration-200"
+                                    placeholder="you@business.com">
+                            </div>
+                            <div>
+                                <label for="service" class="block text-sm font-medium text-gray-700">Area of Interest</label>
+                                <select id="service" name="service" required
+                                    class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-primary-blue focus:ring-primary-blue transition duration-200">
+                                    <option value="">Select a service...</option>
+                                    <option value="tax">Tax Planning & Preparation</option>
+                                    <option value="bookkeeping">GST Registration and Filing</option>
+                                    <option value="consulting">Financial Consulting</option>
+                                    <option value="audit">Assurance & Audit</option>
+                                    <option value="payroll">Payroll Management</option>
+                                    <option value="vcfo">Licensing Services</option>
+                                    <option value="startup">Startup Accounting</option>
+                                    <option value="international">International Tax</option>
+                                    <option value="other">Other Inquiry</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+                                <textarea id="message" name="message" rows="4" required
+                                    class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-primary-blue focus:ring-primary-blue transition duration-200"
+                                    placeholder="Tell us about your accounting needs..."></textarea>
+                            </div>
+                        
+                            <button type="submit"
+                                class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-lg text-lg font-medium text-white bg-accent-blue hover:bg-primary-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-blue transition duration-300 transform hover:scale-[1.01]">
+                                Send Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-white py-12">
+        <div class="container mx-auto px-3 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-accent-blue mb-4">AccounTax Aider</h3>
+                    <p class="text-sm text-gray-400">Modern accounting solutions for the ambitious business owner.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-accent-blue transition duration-300">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-accent-blue transition duration-300">Our Story</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-accent-blue transition duration-300">The Team</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p class="text-gray-400 text-sm"><br> Opp Kodur SCB, Kodur Po, Vadakkemanna, Kerala 676504</p>
+                    <p class="text-gray-400 text-sm mt-2">Email: <a href="mailto:ata.kdy2022@gmail.com" class="hover:text-accent-blue">ata.kdy2022@gmail.com</a></p>
+                    <p class="text-gray-400 text-sm">Phone: 9645201329</p>
+                </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-700 text-center text-sm text-gray-500">
+                © <span id="year">2025</span> AccounTax Aider Firm. All rights reserved. 
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

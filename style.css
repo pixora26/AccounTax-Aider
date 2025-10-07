@@ -1,0 +1,169 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+
+  scroll-behavior: smooth; /* For smooth internal links */
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* General card hover effect for polish */
+.card-hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(29, 78, 216, 0.15); /* Primary blue shadow */
+}
+
+/* --- Animation Classes for Scroll Fade-In (Managed by JS) --- */
+.animate-init {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Style for the testimonial slider dots */
+.dot {
+  transition: background-color 0.3s;
+}
+
+/* Custom width for service cards: 1/8th (12.5%) for 8 total items in the track */
+.card-width {
+  width: 12.5%;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 90vh; /* Adjust if needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensure video doesn't spill */
+}
+
+/* Background Video */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures video covers the area */
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Overlay */
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+  z-index: 1;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 2; /* above video and overlay */
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+
+/* Footer styling */
+footer{
+  background-color: #1F2937; /* Dark Grey for better contrast */
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* -------------------------------------- */
+/* --- Flip Card (Responsive Version) --- */
+/* -------------------------------------- */
+.flip-card {
+  background-color: transparent;
+  width: 100%; /* Make it take up the full width of its grid column */
+  max-width: 300px; /* Set a max width for aesthetic spacing */
+  height: 346px; /* Fixed height for consistent grid alignment */
+  perspective: 1000px;
+  color: white;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  margin: 0 auto; /* Center in its grid cell */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px,
+              rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+              rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  background-color: #1F2937; /* Dark background for the front */
+  padding: 1.5rem;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: var(--color-primary); /* Primary blue for the back side */
+  text-align: left;
+  padding: 1.5rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#service-hero{
+  width: 100vh;
+  height: 100vh;
+}
+
